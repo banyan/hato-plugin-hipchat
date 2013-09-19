@@ -8,10 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Hato::Plugin::Hipchat::VERSION
   spec.authors       = ["Kohei Hasegawa"]
   spec.email         = ["ameutau@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Hato plugin to send messages via HipChat}
+  spec.summary       = %q{Hato plugin to send messages via HipChat}
+  spec.homepage      = "https://github.com/banyan/hato-plugin-hipchat"
   spec.license       = "MIT"
+
+  spec.required_ruby_version = '>= 1.9.2'
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
